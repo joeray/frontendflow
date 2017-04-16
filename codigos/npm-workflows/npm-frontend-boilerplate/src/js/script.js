@@ -29,5 +29,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 	var Brico = new Perro('Brico', 'terrier');
 
+	//Brico.ladrar()
+
 	console.log(html, head, body);
 })(document, window, navigator);

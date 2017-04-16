@@ -16,6 +16,8 @@
 
 	let Brico = new Perro('Brico', 'terrier')
 
+	//Brico.ladrar()
+
 	console.log(html, head, body)
 })(document, window, navigator);
 

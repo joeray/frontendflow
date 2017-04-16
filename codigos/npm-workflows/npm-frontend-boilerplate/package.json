@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w -o ./src/css ./src/scss",
+    "babel": "babel -w ./src/es6/ -d ./src/js/",
+    "pug": "pug -w -P -p ./src/pug/partials/ -O ./src/pug/options.json ./src/pug/templates/ -o ./src/",
+    "watch:metalang": "parallelshell \"npm run sass\" \"npm run pug\" \"npm run babel\""
   },
   "author": "",
   "license": "MIT",
